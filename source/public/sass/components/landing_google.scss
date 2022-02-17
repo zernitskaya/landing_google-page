@@ -1,0 +1,157 @@
+.landing_google {
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  @include media-exsm {
+    background-image: url('../img/background-small.jpg');
+  }
+}
+
+.landing_google__top-side {
+  padding-bottom: 150px;
+
+  @include media-max {
+    padding-bottom: 0;
+  }
+}
+
+.landing_google__wrap {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.landing_google__top-img-wrap {
+  width: 100%;
+
+  @include media-exsm {
+    padding-bottom: 31px;
+  }
+}
+
+.landing_google__img-google {
+  @include media-exsm {
+    width: 87%;
+  }
+}
+
+.landing_google__button-wrap {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 22px;
+
+  @include media-exsm {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 115px;
+  }
+}
+
+.landing_google__bottom-side {
+  display: flex;
+  flex-grow: 1;
+
+  @include media-exsm {
+    flex-direction: column;
+  }
+}
+
+.landing_google__left-wrap {
+  width: 40%;
+
+  @include media-xl {
+    width: 50%;
+  }
+
+  @include media-exsm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.landing_google__right-wrap {
+  width: 60%;
+  align-self: flex-end;
+  flex-shrink: 0;
+
+  @include media-xl {
+    width: 50%;
+  }
+
+  @include media-exsm {
+    width: 100%;
+  }
+}
+
+.landing_google__heading {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 12px;
+  padding-bottom: 55px;
+  width: 675px;
+
+  @include media-exsm {
+    font-size: 24px;
+    width: 100%;
+    // text-align: center;
+  }
+
+}
+
+.landing_google__red-text {
+  color: #ea4335;
+
+  @include media-exsm {
+   white-space: nowrap;
+  //  text-align: left;
+  }
+}
+
+.landing_google__list {
+  list-style: disc;
+  list-style-position: inside;
+  padding-bottom: 51px;
+  font-weight: bold;
+
+  @include media-exsm {
+    font-size: 16px;
+  }
+}
+
+.landing_google__item:first-child {
+  padding-bottom: 20px;
+
+  @include media-exsm {
+
+  }
+}
+
+.landing_google__bottom-img-wrap {
+  width: 100%;
+
+  @include media-max {
+
+  }
+
+  @include media-exsm {
+
+  }
+}
+
+.landing_google__img {
+  width: 111%;
+
+  @include media-max {
+    width: 100%;
+  }
+}
