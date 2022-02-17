@@ -1,5 +1,5 @@
 .landing_google {
-  background-image: url('../img/background.jpg');
+  background-image: url('../img/man.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,6 +11,13 @@
   @include media-exsm {
     background-image: url('../img/background-small.jpg');
   }
+}
+
+.landing_google::after {
+  content: "";
+  // width: 100%;
+  min-height: 100vh;
+  background-color: #00000078;
 }
 
 .landing_google__top-side {
