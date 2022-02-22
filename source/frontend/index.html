@@ -7,62 +7,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>landing_google</title>
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="./plugins/owl.carousel.min.css">
 </head>
 
 <body>
   <section class="landing_google">
-    <div class="lg-wrap">
-      <div class="landing_google__wrap content">
-        <div class="landing_google__top-side">
-          <div class="landing_google__button-wrap">
+    <div class="landing_google__wrap content">
+      <div class="landing_google__top-side">
+        <div class="landing_google__button-wrap">
+          <a href="#form" class="btn landing_google__btn">
+            Купить Акции
+          </a>
+        </div>
+      </div>
+
+      <div class="landing_google__bottom-side">
+        <div class="landing_google__left-wrap">
+          <div class="landing_google__top-img-wrap">
+            <picture>
+              <source type="image/webp" media="(min-width: 769px)" srcset="./img/Google_org_logo.webp">
+              <source type="image/webp" media="(max-width: 768px)" srcset="./img/Google-logo-small.webp">
+              <img src="./img/Google_org_logo.png" alt="" class="landing_google__img-google">
+            </picture>
+          </div>
+
+          <h1 class="landing_google__heading">
+            Покупайте Акции Google
+            <span class="landing_google__red-text"> Доходность +40% в год</span>
+          </h1>
+
+          <ul class="landing_google__list">
+            <li class="landing_google__item">
+              Акции Google показывают стабильный рост 13 лет
+            </li>
+            <li class="landing_google__item">
+              Акции Google в три раза выросли
+            </li>
+          </ul>
+
+          <div class="landing_google__btn-wrap">
             <a href="./form.html" class="btn landing_google__btn">
               Купить Акции
             </a>
           </div>
         </div>
-
-        <div class="landing_google__bottom-side">
-          <div class="landing_google__left-wrap">
-            <div class="landing_google__top-img-wrap">
-              <picture>
-                <source type="image/webp" media="(min-width: 769px)" srcset="./img/Google_org_logo.webp">
-                <source type="image/webp" media="(max-width: 768px)" srcset="./img/Google-logo-small.webp">
-                <img src="./img/Google_org_logo.png" alt="" class="landing_google__img-google">
-              </picture>
-            </div>
-
-            <h1 class="landing_google__heading">
-              Покупайте Акции Google
-              <span class="landing_google__red-text"> Доходность +40% в год</span>
-            </h1>
-
-            <ul class="landing_google__list">
-              <li class="landing_google__item">
-                Акции Google показывают стабильный рост 13 лет
-              </li>
-              <li class="landing_google__item">
-                Акции Google в три раза выросли
-              </li>
-            </ul>
-
-            <div class="landing_google__btn-wrap">
-              <a href="./form.html" class="btn landing_google__btn">
-                Купить Акции
-              </a>
-            </div>
-          </div>
-
-          <!-- <div class="landing_google__right-wrap">
-          <div class="landing_google__bottom-img-wrap">
-            <picture>
-              <source type="image/webp" srcset="./img/man.webp">
-              <img class="landing_google__img" src="./img/man.jpg" alt="man">
-            </picture>
-          </div>
-        </div> -->
-        </div>
-
       </div>
+
     </div>
   </section>
 
@@ -74,7 +64,6 @@
             <span class="main__red"> Alphabet</span>
             одобрила дробление акций в соотношении 1 к 20. Бумаги Google станут более доступными
           </h2>
-          <!-- <img class="main__comment" src="./img/comment.png" alt="" width="30" height="30"> -->
 
           <p class="main__text">
             Совет директоров Alphabet (материнской компании Google) одобрил дробление акций в соотношении 20:1,
@@ -97,37 +86,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="container">
-      <section class="slider">
-        <div class="slider__wrapper">
-          <div class="slider__items">
-            <div class="slider__item">
-              <!-- Контент 1 слайда -->
-              1
-            </div>
-            <div class="slider__item">
-              <!-- Контент 2 слайда -->
-              2
-            </div>
-            <div class="slider__item">
-              <!-- Контент 3 слайда -->
-              3
-            </div>
-            <div class="slider__item">
-              <!-- Контент 4 слайда -->
-              4
-            </div>
-            <div class="slider__item">
-              <!-- Контент 5 слайда -->
-              5
-            </div>
-          </div>
-        </div>
-        <a href="#" class="slider__control" data-slide="prev"></a>
-        <a href="#" class="slider__control" data-slide="next"></a>
-      </section>
     </div>
   </section>
   </section>
@@ -164,6 +122,8 @@
       </div>
     </header>
 
+    @@include('../layouts/slider2.html')
+
     <section class="stock">
       <div class="stock__wrap content">
         <div class="stock__heading-wrap">
@@ -186,7 +146,7 @@
           </p>
         </div>
 
-        <form class="stock__form">
+        <form class="stock__form" id="form">
           <div class="stock__form-wrap">
             <span class="stock__form-text">
               Введите номер телефона
@@ -212,14 +172,12 @@
     </section>
   </section>
 
-  <script defer src="/examples/libs/chief-slider/chief-slider.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const slider = new ChiefSlider('.slider', {
-        loop: true
-      });
-    });
-  </script>
+  @@include('../layouts/modal1.html')
+
+  <script src="./plugins/jquery.min.js"></script>
+  <script src="./plugins/bootstrap.min.js"></script>
+  <script src="./plugins/owl.carousel.js"></script>
+  <script src="./js/script.min.js"></script>
 </body>
 
 </html>
