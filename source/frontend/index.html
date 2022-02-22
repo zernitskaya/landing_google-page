@@ -7,20 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>landing_google</title>
   <link rel="stylesheet" href="./css/style.min.css">
-  <link rel="stylesheet" href="./plugins/owl.carousel.min.css">
 </head>
 
 <body>
   <section class="landing_google">
     <div class="landing_google__wrap content">
-      <div class="landing_google__top-side">
-        <div class="landing_google__button-wrap">
-          <a href="#form" class="btn landing_google__btn">
-            Купить Акции
-          </a>
-        </div>
-      </div>
-
       <div class="landing_google__bottom-side">
         <div class="landing_google__left-wrap">
           <div class="landing_google__top-img-wrap">
@@ -54,6 +45,12 @@
       </div>
 
     </div>
+
+    <div class="landing_google__button-wrap">
+      <a href="#form" class="btn landing_google__btn">
+        Купить Акции
+      </a>
+    </div>
   </section>
 
   <section class="main">
@@ -61,7 +58,14 @@
       <div class="main__wrap content">
         <div class="main__left">
           <h2 class="main__heading">
-            <span class="main__red"> Alphabet</span>
+            <span class="main__red">
+              Alphabet
+
+              <span class="main__color-title">
+                Alphabet Inc. — холдинг, располагающийся в Калифорнии (США). Владеет несколькими компаниями, ранее
+                принадлежавшими Google Inc, и самой Google Inc в том числе.
+              </span>
+            </span>
             одобрила дробление акций в соотношении 1 к 20. Бумаги Google станут более доступными
           </h2>
 
@@ -88,9 +92,45 @@
       </div>
     </div>
   </section>
+
+  <section class="info-block">
+    <div class="info-block__cont content">
+      <h2 class="info-block__title">
+        Ключевые факты
+      </h2>
+
+      <div class="info-block__wrap">
+        <div class="info-block__img-wrap">
+          <img src="./img/alphabet-google-company.png" alt="ALPHABET" class="info-block__pic">
+        </div>
+
+        <div class="info-block__desc">
+          <ul class="info-block__list">
+            <li class="info-block__item">
+              Сплит снизит цену на акции и сделает их более доступными, заявляют в Alphabet. Это значит, что больше
+              инвесторов могут позволить себе покупать бумаги целиком, а не через брокерские компании.
+            </li>
+
+            <li class="info-block__item">
+              Alphabet планирует дробить акции классов A, B и C. Держатели акций получат после закрытия торгов 15 июля
+              2022 года дивиденд – 19 дополнительных акций соответствующего класса.
+            </li>
+
+            <li class="info-block__item">
+              Разделение в соотношении 20 к 1 снижает стоимость акции класса А с $2752,8 до $138,6 по состоянию на
+              момент закрытия торгов 1 февраля.
+            </li>
+
+            <li class="info-block__item">
+              На этой новости акции Alphabet класса A на торгах взлетели на 9,3% – до $3009,3.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="form-sect">
+  <section class="form-sect" id="form">
     <header class="header">
       <div class="header__wrap content">
         <nav class="header__nav">
@@ -122,8 +162,6 @@
       </div>
     </header>
 
-    @@include('../layouts/slider2.html')
-
     <section class="stock">
       <div class="stock__wrap content">
         <div class="stock__heading-wrap">
@@ -146,7 +184,7 @@
           </p>
         </div>
 
-        <form class="stock__form" id="form">
+        <form class="stock__form">
           <div class="stock__form-wrap">
             <span class="stock__form-text">
               Введите номер телефона
@@ -172,11 +210,7 @@
     </section>
   </section>
 
-  @@include('../layouts/modal1.html')
-
   <script src="./plugins/jquery.min.js"></script>
-  <script src="./plugins/bootstrap.min.js"></script>
-  <script src="./plugins/owl.carousel.js"></script>
   <script src="./js/script.min.js"></script>
 </body>
 
