@@ -14,6 +14,10 @@
   @include media-max {
     height: 100%;
   }
+
+  @include media-md {
+    padding: 0;
+  }
 }
 
 .stock__wrap {
@@ -45,8 +49,9 @@
   }
 
   @include media-md {
-    padding: 0 0 82px 0;
+    padding: 0 0 42px 0;
     width: 100%;
+    font-size: 32px;
   }
 }
 
@@ -91,13 +96,15 @@
 .stock__text {
   font-size: 36px;
   padding-bottom: 112px;
+  max-width: 900px;
+  text-align: center;
 
   @include media-xl {
     font-size: 24px;
   }
 
   @include media-md {
-    padding-bottom: 48px;
+    padding-bottom: 16px;
   }
 }
 
@@ -169,6 +176,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
+  text-decoration: none;
 
   @include media-lg {
     width: 100%;
@@ -176,5 +185,6 @@
 
   @include hover {
     opacity: 0.7;
+    color: #fff;
   }
 }

@@ -6,7 +6,6 @@
   display: flex;
   align-items: center;
   padding-top: 60px;
-  padding-bottom: 60px;
 
   @include media-lg {
     flex-direction: column;
