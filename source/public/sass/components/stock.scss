@@ -14,6 +14,10 @@
   @include media-max {
     height: 100%;
   }
+
+  @include media-md {
+    padding: 0;
+  }
 }
 
 .stock__wrap {
@@ -45,8 +49,9 @@
   }
 
   @include media-md {
-    padding: 0 0 82px 0;
+    padding: 0 0 42px 0;
     width: 100%;
+    font-size: 32px;
   }
 }
 
@@ -99,7 +104,7 @@
   }
 
   @include media-md {
-    padding-bottom: 48px;
+    padding-bottom: 16px;
   }
 }
 

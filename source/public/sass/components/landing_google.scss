@@ -47,10 +47,6 @@
   z-index: 7;
   bottom: 30px;
   right: 30px;
-
-  @include media-lg {
-    display: none;
-  }
 }
 
 .landing_google__bottom-side {
