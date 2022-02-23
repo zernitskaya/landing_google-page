@@ -1,5 +1,6 @@
 .info-block {
   padding-bottom: 60px;
+  padding-top: 60px;
   color: #000;
   line-height: 1.4;
 }
@@ -48,6 +49,7 @@
 
 .info-block__list {
   position: relative;
+  padding: 0;
 
   &:before {
     content: "";

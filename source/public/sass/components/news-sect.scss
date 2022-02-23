@@ -1,0 +1,32 @@
+
+.news-sect {
+  padding: 60px 0;
+  background-color: #363a3f;
+}
+
+.news-sect__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 0;
+
+  @include media-md {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include media-sm {
+    grid-template-columns: 1fr;
+  }
+}
+
+.news-sect__title {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 36px;
+}
+
+.news-sect__item {
+  display: flex;
+  flex-direction: column;
+}

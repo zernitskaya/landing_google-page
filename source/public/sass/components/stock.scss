@@ -91,6 +91,8 @@
 .stock__text {
   font-size: 36px;
   padding-bottom: 112px;
+  max-width: 900px;
+  text-align: center;
 
   @include media-xl {
     font-size: 24px;
@@ -169,6 +171,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
+  text-decoration: none;
 
   @include media-lg {
     width: 100%;
@@ -176,5 +180,6 @@
 
   @include hover {
     opacity: 0.7;
+    color: #fff;
   }
 }
