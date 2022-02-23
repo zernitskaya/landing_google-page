@@ -87,6 +87,8 @@
   padding-top: 12px;
   padding-bottom: 55px;
   width: 800px;
+  line-height: 1.5;
+
 
   @include media-exsm {
     font-size: 24px;
@@ -97,11 +99,7 @@
 
 .landing_google__red-text {
   font-weight: bold;
-  display: block;
-
-  @include media-exsm {
-    white-space: nowrap;
-  }
+  white-space: nowrap;
 
   @include media-sm {
     white-space: normal;
